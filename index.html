@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Futuristic eSports Pixel Arena</title>
+<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Intro Screen -->
+  <div id="intro-screen">
+    <h1>WELCOME TO RETRO PIXEL ARENA</h1>
+    <p>CLICK OR TOUCH TO ENTER</p>
+  </div>
+
+  <!-- Main Website -->
+  <div id="main-website" style="display:none;">
+
+    <!-- Games Menu -->
+    <section id="games-menu">
+      <h2>CHOOSE YOUR GAME</h2>
+      <div class="cards">
+        <div class="card"><h3>Pixel Blaster</h3><p>PC</p></div>
+        <div class="card"><h3>Arcade Fury</h3><p>Console</p></div>
+        <div class="card"><h3>Neon Racer</h3><p>PC</p></div>
+        <div class="card"><h3>Retro Jump</h3><p>Console</p></div>
+        <div class="card"><h3>Alien Strike</h3><p>PC</p></div>
+        <div class="card"><h3>8-Bit Quest</h3><p>Console</p></div>
+      </div>
+    </section>
+
+    <!-- Arena Stats -->
+    <section id="arena-stats">
+      <div class="stat"><h3 id="players">0</h3><p>Players</p></div>
+      <div class="stat"><h3 id="games">0</h3><p>Games</p></div>
+      <div class="stat"><h3 id="hours">0</h3><p>Hours Played</p></div>
+    </section>
+
+    <!-- Booking Section -->
+    <section id="booking">
+      <h2>BOOK YOUR SLOT</h2>
+      <form id="booking-form">
+        <label>Select Game:
+          <select id="game-select">
+            <option>Pixel Blaster</option>
+            <option>Arcade Fury</option>
+            <option>Neon Racer</option>
+            <option>Retro Jump</option>
+            <option>Alien Strike</option>
+            <option>8-Bit Quest</option>
+          </select>
+        </label>
+        <label>Select Time:
+          <input type="time" id="slot-time" required>
+        </label>
+        <button type="submit">CONFIRM MISSION</button>
+      </form>
+      <p id="booking-msg"></p>
+    </section>
+
+    <!-- Contact / Footer -->
+    <footer>
+      <p>CONTACT US: retroarena@example.com</p>
+      <p>SOCIAL: 🐦 🕹️ 💬</p>
+      <p>&copy; 2026 Retro Pixel Arena</p>
+    </footer>
+
+  </div>
+
+<script src="script.js"></script>
+</body>
+</html>

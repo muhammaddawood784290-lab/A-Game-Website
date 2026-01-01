@@ -1,0 +1,160 @@
+/* Reset & font */
+* { 
+    margin:0; 
+    padding:0; 
+    box-sizing:border-box; 
+    font-family: 'Press Start 2P', 
+    cursive; 
+}
+body, html { 
+    height:100%; 
+    background:#0a0f30; 
+    color:#00ffea; 
+    overflow-x:hidden; 
+}
+
+/* Intro Screen */
+#intro-screen {
+  display:flex; 
+  flex-direction:column; 
+  justify-content:center; 
+  align-items:center;
+  height:100vh; 
+  width:100%; 
+  text-align:center; 
+  cursor:pointer;
+  background: linear-gradient(180deg, #0a0f30, #000);
+}
+#intro-screen h1 { 
+    font-size:2em; 
+    text-shadow:0 0 10px #00ffea,
+    0 0 20px #00ffea; 
+}
+#intro-screen p { 
+    margin-top:20px; 
+    text-shadow:0 0 8px #00ffea; 
+    animation: blink 1s infinite; 
+}
+@keyframes blink { 
+    0%,50%,100% {opacity:1;}
+    25%,75% {opacity:0;} 
+}
+
+/* Games Menu */
+#games-menu { 
+    padding:50px; 
+    text-align:center; 
+}
+#games-menu h2 { 
+    margin-bottom:30px; 
+    color:#00ffea; 
+    text-shadow:0 0 5px #0ff,
+    0 0 10px #0ff; 
+}
+.cards {
+    display:flex; 
+    justify-content:space-around; 
+    flex-wrap:wrap; 
+}
+.card {
+  background:#0a0f30; 
+  border:3px solid #00ffea; 
+  padding:25px; 
+  margin:15px;
+  width:220px; 
+  cursor:pointer; 
+  transition:0.3s; 
+  text-align:center;
+  box-shadow: 0 0 10px #00ffea;
+}
+.card:hover { 
+    transform:scale(1.1); 
+    box-shadow:0 0 20px #0ff, 
+    0 0 30px #0ff; 
+}
+
+/* Arena Stats */
+#arena-stats { 
+    display:flex; 
+    justify-content:space-around; 
+    margin:50px; 
+    text-align:center;  
+}
+.stat h3 { 
+    font-size:2em; 
+    text-shadow:0 0 5px #0ff; 
+}
+
+/* Booking Section */
+#booking { 
+    padding:50px; 
+    text-align:center; 
+}
+#booking-form { 
+    display:inline-block; 
+    text-align:left; 
+}
+label { 
+    display:block; 
+    margin-bottom:15px; 
+    color:#00ffea; 
+}
+select, input { 
+    display:block; 
+    margin-top:5px; 
+    padding:7px; 
+    background:#0a0f30; 
+    color:#00ffea; 
+    border:2px solid #0ff; 
+}
+button { 
+    margin-top:10px; 
+    padding:10px 25px; 
+    background:#00ffea; 
+    color:#000; 
+    border:none; 
+    cursor:pointer; 
+    font-weight:bold; 
+    transition:0.2s; 
+}
+button:hover { 
+    background:#0ff; 
+}
+
+/* Footer */
+footer { 
+    padding:30px; 
+    text-align:center; 
+    border-top:3px solid #0ff; 
+    margin-top:50px; 
+}
+
+/* Transition Animations */
+.fade-out { 
+    animation: fadeOut 1s forwards; 
+}
+@keyframes fadeOut { 
+    0% {opacity:1;} 
+    100% {opacity:0;} 
+}
+.fade-in { 
+    animation: fadeIn 1s forwards; 
+}
+@keyframes fadeIn { 
+    0% {opacity:0;} 
+    100% {opacity:1;} 
+}
+/* Responsive Design */ 
+@media (max-width:768px) {
+    .cards { 
+        flex-direction:column; 
+        align-items:center; 
+    }
+    #arena-stats { 
+        flex-direction:column; 
+        align-items:center; 
+    }
+    .stat { 
+        margin-bottom:20px; 
+    }
+}
